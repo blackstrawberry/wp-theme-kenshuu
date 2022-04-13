@@ -1,0 +1,181 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sw1{
+  background-image:url("img/main_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+}
+.sw2{
+  background-image:url("img/main_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+}
+.sw3{
+  background-image:url("img/main_3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+}
+.sw4{
+  background-image:url("img/main_4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: #808080;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    position: relative;
+}
+.navbar-nav .nav-link:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    background-color: #000;
+  }
+.navbar-nav .nav-link:hover::after{
+width: 100%;
+opacity: 1;
+}
+
+.footer {
+    background-color: #eeeeee;
+    text-align: center;
+    color: #808080;
+}
+.footer div {
+    display: inline-table;
+    padding: 5%;
+}
+.footer div ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer p{
+    text-align: right;
+    padding-right: 5%;
+}
+
+.content {
+    padding: 5% 5% 5% 5%;
+}
+
+.content div{
+    display: flex;
+}
+
+.content .shoukai_img {
+    background-image: url("./img/shoukai.jpg");
+    background-position: 100% 100%;
+    height : 350px;
+    background-size: cover;
+}
+
+.content img {
+    width: 400px;
+}
+
+.container .sentaku .row .col-sm-6 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sentaku .card:hover {
+    transform: scale( 1.1, 1.1 );
+    z-index: 9999;
+}
+
+.keikaku-post {
+  padding: 5% 5% 5% 5%;
+}
+
+.motto {
+  text-align: center;
+}
+
+.motto button{
+  border-radius: 30px;
+}
+
+.motto a{
+  border-radius: 30px;
+}
+
+
+@media ( max-width: 420px ) {
+  .swiper-slide{
+    background-size: contain;
+  }
+  .swiper {
+    height: 300px;
+  }
+  #wpadminbar{
+    position: fixed;
+    top: 0;
+  }
+}
