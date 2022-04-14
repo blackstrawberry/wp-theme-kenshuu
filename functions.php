@@ -8,4 +8,9 @@
     wp_enqueue_style('main_styles', get_stylesheet_uri());
   }
   add_action('wp_enqueue_scripts','main_files');
+
+  function main_features() {
+    add_theme_support('title_tag');
+  }
+  add_action('after_setup_theme', 'main_features');
 ?>

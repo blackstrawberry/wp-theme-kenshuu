@@ -104,17 +104,22 @@ opacity: 1;
 }
 
 .footer {
+    padding-top: 100px;
+    padding-left: 30px;
     background-color: #eeeeee;
-    text-align: center;
     color: #808080;
 }
-.footer div {
-    display: inline-table;
-    padding: 5%;
+.footer h5, .footer li, .footer h4{
+  cursor: pointer;
 }
-.footer div ul {
+.footer div {
+    padding: 1%;
+    text-align: center;
+}
+.footer ul {
     list-style-type: none;
     padding-left: 0;
+    cursor: pointer;
 }
 .footer p{
     text-align: right;
@@ -166,6 +171,10 @@ opacity: 1;
   border-radius: 30px;
 }
 
+.card {
+  cursor: pointer;
+}
+
 
 @media ( max-width: 420px ) {
   .swiper-slide{
@@ -177,5 +186,6 @@ opacity: 1;
   #wpadminbar{
     position: fixed;
     top: 0;
+    padding-right: 30px;
   }
 }

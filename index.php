@@ -28,7 +28,7 @@
                           <img src="<?php echo get_theme_file_uri('/img/mainshoukai.png');?>" alt="shoukai" width="100%"/>
                           <div class="d-grid gap-4">
                               <div class="motto">
-                                <a href="#" class="btn btn-dark">プロジェクト紹介を見る</a>
+                                <a href="<?php echo site_url('/プロジェクト紹介');?>" class="btn btn-dark">プロジェクト紹介を見る</a>
                               </div>
                           </div>
                           <br>
