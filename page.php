@@ -1,8 +1,8 @@
+
 <?php get_header(); ?>
 
 <?php while(have_posts()) {
   the_post(); ?>
-
     <?php
       if( get_the_ID() == 7){
         ?>
@@ -137,6 +137,11 @@
           <!--contents-->
           <div class="container">
                 <h1><?php the_title(); ?></h1>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-light">《《　一覧へ戻る</button>
+                    </div>
+                </div>
           </div>
           <!--content end-->
         <?php
