@@ -19,21 +19,20 @@
                 </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('/プロジェクト紹介')?>">プロジェクト紹介</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('/運動計画') ?>">運動計画</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('/運動レコード') ?>">運動レコード</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="<?php echo site_url('/お問い合わせ') ?>">お問い合わせ</a>
-                  </li>
+                <?php
+									wp_nav_menu(
+										array(
+											'menu' => 'primary',
+											'container' => '',
+											'theme_location' => 'primary',
+											'items_wrap' => '<li class="nav-item">%3$s</li>'
+										)
+									);
+								?>
                 </ul>
               </div>
             </div>
           </nav>
     </div>
+
     <!--header end-->

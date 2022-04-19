@@ -13,10 +13,10 @@
         <div class="col-xs">
             <h5 onclick="location.href='<?php echo site_url('/運動レコード')?>';">運動レコード</h3>
             <ul>
-                <li onclick="location.href='<?php echo site_url('/運動レコード/ランニング')?>';">ランニング</li>
-                <li onclick="location.href='<?php echo site_url('/運動レコード/懸垂')?>';">懸垂</li>
-                <li onclick="location.href='<?php echo site_url('/運動レコード/腕立て伏せ')?>';">腕立て伏せ</li>
-                <li onclick="location.href='<?php echo site_url('/運動レコード/腹筋運動')?>';">腹筋運動</li>
+                <li onclick="location.href='<?php echo site_url('/category/undou_recode/running/')?>';">ランニング</li>
+                <li onclick="location.href='<?php echo site_url('/category/undou_recode/kensui/')?>';">懸垂</li>
+                <li onclick="location.href='<?php echo site_url('/category/undou_recode/udetate/')?>';">腕立て伏せ</li>
+                <li onclick="location.href='<?php echo site_url('/category/undou_recode/hukkin/')?>';">腹筋運動</li>
             </ul>
         </div>
         <div class="col-xs">

@@ -81,11 +81,16 @@ body {
   color: #808080;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav a {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
     color: #000;
     position: relative;
+    margin-bottom: 5px;
+    margin: 0px 30px;
 }
-.navbar-nav .nav-link:after{
+.navbar-nav a:after{
     content: "";
     position: absolute;
     left: 0;
@@ -98,7 +103,7 @@ body {
     opacity: 0;
     background-color: #000;
   }
-.navbar-nav .nav-link:hover::after{
+.navbar-nav a:hover::after{
 width: 100%;
 opacity: 1;
 }
@@ -126,15 +131,12 @@ opacity: 1;
     padding-right: 5%;
 }
 
-.content {
-    padding: 5% 5% 5% 5%;
-}
 
 .content div{
     display: flex;
 }
 
-.content .shoukai_img {
+.shoukai_img {
     background-image: url("./img/shoukai.jpg");
     background-position: 100% 100%;
     height : 350px;
