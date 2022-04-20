@@ -32,7 +32,7 @@ get_header();
                 $imgsource = "/img/kensui.png"; 
             }
             else if($title == "腕立て伏せ"){
-                $bg_color = "bg-wanning";
+                $bg_color = "bg-warning";
                 $para_1 = "1セット15回ずつ、大変なら10回にします。";
                 $para_2 = "回数よりも、正しい姿勢を保つことに気をつかうようにします。";
                 $imgsource = "/img/udetate.png"; 
@@ -81,6 +81,7 @@ get_header();
             ?>
                 </div>
             </div>
+            <br>
             <?php
             the_posts_pagination();
             ?>
@@ -88,7 +89,7 @@ get_header();
 
 		}
 	?> 
-
+<br>
 </div>
 	
 

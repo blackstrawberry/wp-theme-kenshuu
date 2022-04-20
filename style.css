@@ -232,6 +232,125 @@ opacity: 1;
 	display: none;
 }
 
+.cat-title a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.post-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment .byuser{
+  text-decoration:none;
+  position: relative;
+}
+.comment textarea{
+  height: 40px;
+  width : 90%;
+}
+.comment-reply-title{
+  font-size: 20px;
+  line-height: 1.4;
+}
+.comment-author{
+  background-color:#e8e8e8;
+  max-height: 30px;
+  text-decoration: none;
+  color:#000;
+}
+.comment-author img{
+  max-width : 30px;
+  max-height: 30px;
+}
+.comment-author a{
+  text-decoration: none;
+  color: black;
+  font-style: normal;
+}
+.comment-author .says{
+  display:none;
+}
+.comment p{
+  margin : 3px;
+}
+.comment .reply{
+  text-align: right;
+}
+.comment-meta a{
+  color: black;
+  text-decoration: none;
+}
+.comment-form-comment label{
+  display: none;
+}
+
+.comment-respond form{
+  position: relative;
+}
+.comment .form-submit{
+  position: absolute;
+  top:21px;
+  right: 0;
+  height: 40px;
+}
+.comment .form-submit .submit{
+  height: 40px
+}
+.comment .comment-meta{
+  position: absolute;
+  top:5px;
+  right:12px;
+}
+
+.modoru{
+  text-align: right;
+  margin: 30px 0 30px 0;
+}
+
+.tag {
+  text-decoration: none;
+  color:#808080;
+}
+.tag a{
+  color:#808080;
+}
+
+.otoiawa form label{
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 550;
+  line-height: 1.2;
+  width: 100%;
+}
+.otoiawa form span{
+  font-size: 1rem;
+  margin-left: 1px;
+}
+.otoiawa form span input, .otoiawa form span textarea{
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 1px;
+  border: 1px solid #ced4da;
+  padding: .375rem .75rem;
+  margin-top: 5px;
+}
+.otoiawa form span textarea{
+  height: 90px;
+}
+.otoiawa form p .wpcf7-submit {
+  width: 100%;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color:#ffff;
+  font-weight:400;
+  font-size: 1rem;
+  line-height:1.5;
+  border-radius: 5px;
+  padding: 6px;
+}
+
 
 @media ( max-width: 420px ) {
   .swiper-slide{
@@ -244,5 +363,27 @@ opacity: 1;
     position: fixed;
     top: 0;
     padding-right: 30px;
+  }
+  .comment textarea{
+    height: 40px;
+    width : 70%;
+  }
+  .navbar-nav .menu-item{
+    text-align: right;
+  }
+  .navbar-nav .menu-item a{
+    margin: 15px 0 0 0;
+  }
+  .container-fluid{
+    padding-right:0;
+  }
+  .container h1{
+    text-align: center;
+  }
+  .comment .form-submit{
+    position: absolute;
+    top:41px;
+    right: 0;
+    height: 42px;
   }
 }

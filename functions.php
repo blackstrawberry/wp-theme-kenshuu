@@ -1,4 +1,6 @@
 <?php
+
+
   function followandrew_theme_support(){
     // add dynamic title tag support
     add_theme_support('title-tag');
@@ -13,13 +15,14 @@
       'footer' => "Footer Menu Items"
     );
     register_nav_menus($locations);
+    add_shortcode('recent-posts', 'recent_posts_function');
   }
   add_action('init','followandrew_menus');
 
   function main_files() {
     wp_enqueue_script( 'makechart', get_theme_file_uri('/js/main.js'), NULL, '1.0', true );
     wp_enqueue_script( 'swiper-js', '//unpkg.com/swiper@8/swiper-bundle.min.js', NULL, '1.0', true );
-    wp_enqueue_script( 'bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@4.9.2/dist/js/bootstrap.bundle.min.js', NULL, '1.0', true );
+    wp_enqueue_script( 'bootstrap-js', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', NULL, '1.0', true );
     wp_enqueue_style( 'bootstrap-css', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
     wp_enqueue_style( 'swiper-css', '//unpkg.com/swiper@8/swiper-bundle.min.css');
     wp_enqueue_style('main_styles', get_stylesheet_uri());
