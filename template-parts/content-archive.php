@@ -8,9 +8,14 @@ $postDate = get_the_date();
             <p class="card-text"><?php echo $postDate; ?></p>
             <div style="text-align:center;">
             <?php
-            if(the_post_thumbnail()){
+            if(get_post_thumbnail_id()){
               ?>
               <img class="card-img-top" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="image"/>
+              <?php
+            }
+            else{
+                ?>
+              <img class="card-img-top" src="<?php echo get_theme_file_uri('/img/sample.png') ?>" alt="image"/>
               <?php
             }
             ?>

@@ -178,6 +178,58 @@ opacity: 1;
 }
 .card-body img{
   width: 90%;
+  height: 100%;
+}
+
+.pagination .nav-links {
+  margin-top:1rem;
+	text-align:center;
+	flex-wrap: wrap;
+	font-size: 1.2rem;
+	font-weight: 600;
+	width: calc(100% + 2.5rem);
+}
+
+.pagination-separator {
+	margin: 5rem 0;
+}
+
+.nav-links > * {
+	margin: 0 0 1rem 1.5rem;
+}
+
+.nav-links .placeholder {
+	display: none;
+	visibility: hidden;
+}
+
+.pagination a {
+  display:inline-block;
+  width: 50px;
+	text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+.pagination span {
+  display:inline-block;
+  width: 50px;
+	text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+.pagination a:focus,
+.pagination a:hover {
+	text-decoration: underline;
+}
+
+.pagination .dots {
+	transform: translateY(-0.3em);
+	color: #6d6d6d;
+}
+
+.nav-short {
+	display: none;
 }
 
 
