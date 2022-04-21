@@ -59,29 +59,21 @@
                     <br>
                     <div class="row row-cols-md-4 g-4">
                         <?php
-                        $i = 0;
-                        while( $i < 4 ){
-                        ?>
-                        <div class="col-sm-3">
-                            <div class="card w-100" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">title</h5>
-                                    <p class="card-text">2022/00/00</p>
-                                    <img src="./img/sample.png" class="card-img-top" alt="sample">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <?php
-                        $i++;
-                        }
+                            $opinionPosts = new WP_Query('cat=14');
+
+                            if($opinionPosts->have_posts()){
+                                while($opinionPosts->have_posts()){
+                                    $opinionPosts->the_post();
+                                    get_template_part('template-parts/content','archive');
+                                } 
+                            }
                         ?>
                     </div>
                     <br>
                     <div class="row justify-content-center">
                         <div class="col" style="text-align: center;">
                             <div class="motto">
-                                <button type="button" class="btn btn-primary text-white">もっと見る</button>
+                                <button type="button" class="btn btn-primary text-white" onclick="location.href='<?php echo site_url('/category/undou_recode/running/'); ?>'">もっと見る</button>
                             </div>
                         </div>
                     </div>
@@ -89,30 +81,22 @@
                 <div class="tab-pane fade" id="kensui" role="tabpanel" aria-labelledby="profile-tab">
                     <br>
                     <div class="row row-cols-md-4 g-4">
-                    <?php
-                        $i = 0;
-                        while( $i < 4 ){
-                        ?>
-                        <div class="col-sm-3">
-                            <div class="card w-100" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">title</h5>
-                                    <p class="card-text">2022/00/00</p>
-                                    <img src="./img/sample.png" class="card-img-top" alt="sample">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
                         <?php
-                        $i++;
-                        }
+                            $opinionPosts = new WP_Query('cat=15');
+
+                            if($opinionPosts->have_posts()){
+                                while($opinionPosts->have_posts()){
+                                    $opinionPosts->the_post();
+                                    get_template_part('template-parts/content','archive');
+                                } 
+                            }
                         ?>
                     </div>
                     <br>
                     <div class="row justify-content-center">
                         <div class="col" style="text-align: center;">
                             <div class="motto">
-                                <button type="button" class="btn btn-secondary text-white">もっと見る</button>
+                                <button type="button" class="btn btn-secondary text-white" onclick="location.href='<?php echo site_url('/category/undou_recode/kensui/'); ?>'">もっと見る</button>
                             </div>
                         </div>
                     </div>
@@ -120,30 +104,22 @@
                 <div class="tab-pane fade" id="ude" role="tabpanel" aria-labelledby="contact-tab">
                     <br>
                     <div class="row row-cols-md-4 g-4">
-                    <?php
-                        $i = 0;
-                        while( $i < 4 ){
-                        ?>
-                        <div class="col-sm-3">
-                            <div class="card w-100" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">title</h5>
-                                    <p class="card-text">2022/00/00</p>
-                                    <img src="./img/sample.png" class="card-img-top" alt="sample">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
                         <?php
-                        $i++;
-                        }
+                            $opinionPosts = new WP_Query('cat=16');
+
+                            if($opinionPosts->have_posts()){
+                                while($opinionPosts->have_posts()){
+                                    $opinionPosts->the_post();
+                                    get_template_part('template-parts/content','archive');
+                                } 
+                            }
                         ?>
                     </div>
                     <br>
                     <div class="row justify-content-center">
                         <div class="col" style="text-align: center;">
                             <div class="motto">
-                                <button type="button" class="btn btn-warning text-white">もっと見る</button>
+                                <button type="button" class="btn btn-warning text-white" onclick="location.href='<?php echo site_url('/category/undou_recode/udetate/'); ?>'">もっと見る</button>
                             </div>
                         </div>
                     </div>
@@ -151,30 +127,22 @@
                 <div class="tab-pane fade" id="hukkin" role="tabpanel" aria-labelledby="contact-tab">
                     <br>
                     <div class="row row-cols-md-4 g-4">
-                    <?php
-                        $i = 0;
-                        while( $i < 4 ){
-                        ?>
-                        <div class="col-sm-3">
-                            <div class="card w-100" style="width: 18rem;">
-                                    <div class="card-body">
-                                    <h5 class="card-title">title</h5>
-                                    <p class="card-text">2022/00/00</p>
-                                    <img src="./img/sample.png" class="card-img-top" alt="sample">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                            </div>
-                        </div>
                         <?php
-                        $i++;
-                        }
+                            $opinionPosts = new WP_Query('cat=17');
+
+                            if($opinionPosts->have_posts()){
+                                while($opinionPosts->have_posts()){
+                                    $opinionPosts->the_post();
+                                    get_template_part('template-parts/content','archive');
+                                } 
+                            }
                         ?>
                     </div>
                     <br>
                     <div class="row justify-content-center">
                         <div class="col" style="text-align: center;">
                             <div class="motto">
-                                <button type="button" class="btn btn-info text-white">もっと見る</button>
+                                <button type="button" class="btn btn-info text-white" onclick="location.href='<?php echo site_url('/category/undou_recode/hukkin/'); ?>'">もっと見る</button>
                             </div>
                         </div>
                     </div>
