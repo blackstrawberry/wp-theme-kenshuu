@@ -59,7 +59,7 @@
                     <br>
                     <div class="row row-cols-md-4 g-4">
                         <?php
-                            $opinionPosts = new WP_Query('cat=14');
+                            $opinionPosts = new WP_Query('cat=6');
 
                             if($opinionPosts->have_posts()){
                                 while($opinionPosts->have_posts()){
@@ -82,7 +82,7 @@
                     <br>
                     <div class="row row-cols-md-4 g-4">
                         <?php
-                            $opinionPosts = new WP_Query('cat=15');
+                            $opinionPosts = new WP_Query('cat=7');
 
                             if($opinionPosts->have_posts()){
                                 while($opinionPosts->have_posts()){
@@ -105,7 +105,7 @@
                     <br>
                     <div class="row row-cols-md-4 g-4">
                         <?php
-                            $opinionPosts = new WP_Query('cat=16');
+                            $opinionPosts = new WP_Query('cat=8');
 
                             if($opinionPosts->have_posts()){
                                 while($opinionPosts->have_posts()){
@@ -128,7 +128,7 @@
                     <br>
                     <div class="row row-cols-md-4 g-4">
                         <?php
-                            $opinionPosts = new WP_Query('cat=17');
+                            $opinionPosts = new WP_Query('cat=9');
 
                             if($opinionPosts->have_posts()){
                                 while($opinionPosts->have_posts()){
