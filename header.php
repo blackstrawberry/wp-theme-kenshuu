@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <?php wp_head(); ?>
     <meta charset="UTF-8">
