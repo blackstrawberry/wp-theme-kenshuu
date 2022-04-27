@@ -13,6 +13,19 @@ body {
   padding: 0;
 }
 
+.container{
+  margin-bottom: 50px;
+}
+
+.wide{
+  text-align:center;
+}
+.wide ul{
+  display:inline;
+}
+.wide li{
+  display:inline-block;
+}
 
 .swiper {
   width: 100%;
@@ -350,7 +363,9 @@ opacity: 1;
   border-radius: 5px;
   padding: 6px;
 }
-
+.tribe-common-l-container .tribe-events-l-container{
+  padding-top:10px;
+}
 
 @media ( max-width: 420px ) {
   .swiper-slide{
@@ -386,4 +401,29 @@ opacity: 1;
     right: 0;
     height: 42px;
   }
+  .wide{
+    display:none;
+  }
+  .mytitle{
+    position:relative;
+    margin-top: 50px;
+  }
+
+  #titletext{
+    position: relative;
+    display:inline-block;
+    margin: 0px 20px 30px;
+    position: relative;
+    font-size: 30px;
+  }
+
+  #nav-position{
+    position: absolute;
+    top: -5px;
+    right: 52px;
+    width: 30px;
+    margin:0;
+    padding:0;
+  }    
+  
 }

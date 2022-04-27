@@ -10,30 +10,44 @@
 </head>
 <body>
     <!--header-->
-    <div class="px-4 pt-5 my-5">
-        <h1 class="display-4 text-center fw-bold" onclick="location.href='<?php echo site_url() ?>';" style="cursor:pointer;">MyExerciseHistory</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-center">
+    <div class="mytitle">
+        <h1 class="display-4 text-center fw-bold" id="titletext" onclick="location.href='<?php echo site_url() ?>';" style="cursor:pointer;">MyExerciseHistory</h1>
+        <div class="wide">
+        <ul class="navbar-nav">
+            <?php
+              wp_nav_menu(
+                array(
+                  'menu' => 'primary',
+                  'container' => '',
+                  'theme_location' => 'primary',
+                  'items_wrap' => '<li class="nav-item">%3$s</li>'
+                )
+              );
+            ?>
+            </ul>
+            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-center" id="nav-position">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                <?php
-									wp_nav_menu(
-										array(
-											'menu' => 'primary',
-											'container' => '',
-											'theme_location' => 'primary',
-											'items_wrap' => '<li class="nav-item">%3$s</li>'
-										)
-									);
-								?>
-                </ul>
-              </div>
             </div>
           </nav>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <?php
+              wp_nav_menu(
+                array(
+                  'menu' => 'primary',
+                  'container' => '',
+                  'theme_location' => 'primary',
+                  'items_wrap' => '<li class="nav-item">%3$s</li>'
+                )
+              );
+            ?>
+            </ul>
+          </div>
     </div>
 
     <!--header end-->

@@ -5,7 +5,7 @@ const myChart = new Chart(ctx, {
         labels: ['月', '火', '水', '木', '金', '土', '日'],
         datasets: [{
             label: '今週のアップ回数',
-            data: [0, 4, 3, 0, 0, 0, 0],
+            data: [4, 3, 0, 0, 0, 0, 0],
             backgroundColor: [
                 'rgba(255, 51, 51, 0.2)',
                 'rgba(255, 51, 51, 0.2)',
